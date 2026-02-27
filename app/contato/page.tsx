@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
+import Contact from '@/sections/Contact'
+
+export const metadata: Metadata = {
+  title: 'Contato',
+  description: 'Entre em contato com Pedro Ayres.',
+}
+
 export default function ContatoPage() {
   return (
-    <main style={{ padding: 40 }}>
-      <h1>Contato</h1>
-      <p>Email: pedro@email.com</p>
+    <main>
+      <Contact />
     </main>
   )
 }
