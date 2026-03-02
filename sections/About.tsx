@@ -1,20 +1,20 @@
-export default function Contact() {
+export default function About() {
   return (
-    <section>
+    <section id="sobre">
       <div className="container">
-        <h2>Vamos conversar?</h2>
+        <h2>Sobre mim</h2>
         <p>
-          Estou aberto a oportunidades e novos desafios.  
-          Entre em contato comigo:
+          Sou desenvolvedor com forte interesse em tecnologia, programação e
+          criação de soluções digitais. Atualmente, venho construindo minha base
+          técnica por meio de projetos práticos, explorando desde conceitos
+          fundamentais até o desenvolvimento de aplicações web modernas.
         </p>
-
-        <div className="contact-actions">
-          <a className="button-neon" href="mailto:pedrohayres11@gmail.com">
-            Enviar email
-          </a>
-          <a href="https://github.com/pedro-hma">GitHub</a>
-          <a href="https://www.linkedin.com/in/pedro-henrique-ayres-563145246/">LinkedIn</a>
-        </div>
+        <p>
+          Tenho experiência com Java, Programação Orientada a Objetos,
+          Estruturas de Dados e desenvolvimento web utilizando React,
+          Next.js e TypeScript. Gosto de escrever código organizado e
+          focado em boas práticas.
+        </p>
       </div>
     </section>
   )

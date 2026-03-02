@@ -55,10 +55,9 @@ body {
 }
 section {
   background: rgba(15, 20, 17, 0.85);
-  border: 1px solid rgba(157, 255, 0, 0.25);
   border-radius: 16px;
 
-  padding: 40px;
+  padding: 80px 0;
   margin: 40px;
 
   box-shadow:
@@ -89,14 +88,28 @@ section {
   max-width: 1100px;
   margin: 0 auto;
 }
-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
+.hero {
+  padding: 120px 0;
+  text-align: center;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 16px;
+.hero h1 {
+  font-size: 3.2rem;
+  max-width: 900px;
+  margin: 0 auto 24px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .card {
   background: rgba(20, 30, 20, 0.9);
