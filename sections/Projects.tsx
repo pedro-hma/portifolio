@@ -1,5 +1,4 @@
 import ProjectCard from '@/components/ProjectCard'
-
 const projects = [
   {
     title: 'Prontuário Psicológico',
@@ -36,14 +35,13 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projetos">
-      <h2>Projetos</h2>
-
-      <div style={{ display: 'grid', gap: 24 }}>
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
-      </div>
-    </section>
+    <section>
+  <div className="container">
+    <h2>Projetos</h2>
+    <div className="projects-grid">
+      {/* ProjectCard aqui */}
+    </div>
+  </div>
+</section>
   )
 }

@@ -12,20 +12,18 @@ export default function ProjectCard({
   githubUrl,
 }: ProjectCardProps) {
   return (
-    <article style={styles.card}>
+    <article className="card">
       <h3>{title}</h3>
       <p>{description}</p>
-
       <ul style={styles.techList}>
         {technologies.map((tech) => (
           <li key={tech}>{tech}</li>
         ))}
       </ul>
-
       <a href={githubUrl} target="_blank" rel="noopener noreferrer">
         Ver no GitHub →
       </a>
-    </article>
+      </article>
   )
 }
 

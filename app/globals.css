@@ -107,3 +107,8 @@ h2 {
   padding: 14px 28px;
   font-size: 1rem;
 }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}

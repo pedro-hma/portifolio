@@ -1,17 +1,21 @@
-export default function About() {
+export default function Contact() {
   return (
-    <section id="sobre" style={{ padding: 20 }}>
-      <h2>Sobre mim</h2>
-      <p>
-        Desenvolvedor focado em criar interfaces modernas e desenvolver sistemas web mobile.
-        Forte interesse em tecnologia, programação e criação de soluções digitais.
-        Atualmente, tenho aplicado meus conhecimentos atraves de projetos praticos, explorando desde conceitos fundamentais até desevolvimento de aplicações web
-      </p>
-      <p>
-        Tenho experiência com <strong>Java, Programação Orientada a Objetos,
-    Estruturas de Dados</strong> e desenvolvimento web utilizando
-    <strong> React, Next.js e TypeScript</strong>.
-      </p>
+    <section>
+      <div className="container">
+        <h2>Vamos conversar?</h2>
+        <p>
+          Estou aberto a oportunidades e novos desafios.  
+          Entre em contato comigo:
+        </p>
+
+        <div className="contact-actions">
+          <a className="button-neon" href="mailto:pedrohayres11@gmail.com">
+            Enviar email
+          </a>
+          <a href="https://github.com/pedro-hma">GitHub</a>
+          <a href="https://www.linkedin.com/in/pedro-henrique-ayres-563145246/">LinkedIn</a>
+        </div>
+      </div>
     </section>
   )
 }
