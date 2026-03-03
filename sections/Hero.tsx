@@ -3,8 +3,8 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero-content">
         <div className="hero-left">
-          <h1 className="hero-title">Desenvolvedor Frontend <br/>focado em criar <span className="highlight">aplicações web modernas</span>
-          </h1>
+         <h1 className="hero-title">
+           Desenvolvedor Frontend <br />focado em criar <span className="highlight">aplicações web modernas</span></h1>
           <p className="hero-subtitle">
             Construindo aplicações com React e Next.js, aplicando boas práticas e organização de código.
           </p>
