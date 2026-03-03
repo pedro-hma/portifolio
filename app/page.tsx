@@ -1,15 +1,16 @@
 import Hero from '@/sections/Hero'
-import About from '@/sections/About'
-import Projects from '@/sections/Projects'
-import Contact from '@/sections/Contact'
-
+import AboutPreview from '@/sections/AboutPreview'
+import FeaturedProjects from '@/sections/FeaturedProjects'
+import Stack from '@/sections/Stack'
+import Differentials from '@/sections/Differentials'
 export default function HomePage() {
   return (
     <main>
       <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <AboutPreview />
+      <FeaturedProjects />
+      <Stack />
+      <Differentials />
     </main>
   )
 }
