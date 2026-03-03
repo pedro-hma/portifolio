@@ -3,13 +3,14 @@ type ProjectCardProps = {
   description: string
   technologies: string[]
   githubUrl: string
+  liveUrl ?: string
 }
-
 export default function ProjectCard({
   title,
   description,
   technologies,
   githubUrl,
+  liveUrl,
 }: ProjectCardProps) {
   return (
     <article className="card">
@@ -20,13 +21,13 @@ export default function ProjectCard({
           <li key={tech}>{tech}</li>
         ))}
       </ul>
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-        Ver no GitHub →
-      </a>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+      {liveUrl && (
+        <a href={liveUrl}target="_blank"className="button-outline">Ver Online</a>
+        )}
       </article>
   )
 }
-
 const styles = {
   card: {
     display: 'flex',

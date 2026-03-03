@@ -9,7 +9,6 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -47,6 +46,8 @@ body {
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: 600;
+  font-size: 18px; /* padrão bom */
+  line-height: 1.7;
   }
 }
 section {
@@ -77,77 +78,43 @@ section {
   max-width: 1100px;
   margin: 0 auto;
 }
-.hero {
-  padding: 140px 0;
-}
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 80px;
-}
-.hero-left {
-  max-width: 700px;
-}
-.hero-title {
-  font-size: clamp(2.6rem, 3vw, 3rem);
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-}
-.hero-subtitle {
-  font-size: 1.35rem;
-  line-height: 1.6;
-  opacity: 0.9;
-  max-width: 650px;
-}
-.hero-buttons {
+.contact-links {
   display: flex;
   gap: 20px;
+  margin-top: 24px;
+  flex-wrap: wrap;
 }
-/* Card Social */
-.hero-profile {
-   padding: 28px;
-  width: 240px;
-  border-radius: 14px;
-  background: rgba(20, 30, 20, 0.6);
-  border: 1px solid rgba(157, 255, 0, 0.2);
+.hero {
+  padding: 120px 0;
+  text-align: center;
 }
-.hero-name {
-  font-size: 1rem;
-  margin-bottom: 18px;
+.hero h1 {
+  font-size: 3.2rem;
+  max-width: 900px;
+  margin: 0 auto 24px;
 }
-.hero-socials {
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+.hero-actions {
   display: flex;
-  gap: 16px;
-}
-.hero-socials a {
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  border: 1px solid rgba(157, 255, 0, 0.4);
-  color: var(--neon-green);
-  transition: 0.2s ease;
+  gap: 20px;
 }
-.hero-socials a:hover {
-  background: var(--neon-green);
-  color: #0b0f0c;
+.card {
+  background: rgba(20, 30, 20, 0.9);
+  border-radius: 14px;
+  padding: 24px;
 }
-/* Responsivo */
-@media (max-width: 900px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-subtitle {
-    margin: 0 auto 40px;
-  }
-  .hero-buttons {
-    justify-content: center;
-  }
-  .hero-profile {
-    margin-top: 40px;
-  }
+.button-neon {
+  padding: 14px 28px;
+  font-size: 1rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }

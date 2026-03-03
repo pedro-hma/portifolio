@@ -1,20 +1,18 @@
 export default function Contact() {
   return (
-    <section id="contato" style={{ padding: 20 }}>
-      <h1>Vamos conversar?</h1>
-      <p>Estou aberto a oportunidades e novos desafios.</p>
-      <h2>Contato</h2>
-      <p>Email: pedrohayres11@gmail.com</p>
-      <div className="social-links">
+    <section id="contato">
+      <div className="container">
+        <h2>Contato</h2>
         <p>
-          <strong>LinkedIn:</strong>{' '}
-          <a href="https://www.linkedin.com/in/pedro-henrique-ayres-563145246/"target="_blank">Perfil LinkedIn</a>
-          </p>
-          <p>
-            <strong>GitHub:</strong>{' '}
-            <a href="https://github.com/pedro-hma"target="_blank">Perfil GitHub</a>
-            </p>
-            </div>
-            </section>
+          Estou aberto a oportunidades e novos desafios.
+          Entre em contato comigo:
+        </p>
+        <div className="contact-links">
+          <a href="mailto:pedrohayres11@gmail.com"className="button-neon">Enviar Email</a>
+          <a href="https://www.linkedin.com/in/pedro-henrique-ayres-563145246/"target="_blank">LinkedIn</a>
+          <a href="https://github.com/pedro-hma"target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
   )
 }
