@@ -87,18 +87,18 @@ section {
   gap: 80px;
 }
 .hero-left {
-  flex: 1;
+  max-width: 700px;
 }
 .hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.2rem);
-  line-height: 1.15;
+  font-size: clamp(2.6rem, 3vw, 3rem);
+  line-height: 1.2;
   letter-spacing: -0.5px;
 }
 .hero-subtitle {
-  font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+  font-size: 1.35rem;
   line-height: 1.6;
-  opacity: 0.8;
-  max-width: 600px;
+  opacity: 0.9;
+  max-width: 650px;
 }
 .hero-buttons {
   display: flex;
@@ -106,7 +106,8 @@ section {
 }
 .highlight {
   color: var(--neon-green);
-  position: relative;
+  font-weight: 600;
+  text-shadow: 0 0 12px rgba(157, 255, 0, 0.4);
 }
 .highlight::after {
   content: "";
