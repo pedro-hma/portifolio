@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import HangmanFigure from "@/components/HangmanFigure"
 import HangmanKeyboard from "@/components/HangmanKeyboard"
 
@@ -16,7 +16,6 @@ const words = [
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
 }
-
 export default function Game() {
 
   const [word, setWord] = useState(getWord())
@@ -48,6 +47,18 @@ export default function Game() {
     setWord(getWord())
     setGuessed([])
     setErrors(0)
+    useEffect(() => {
+  function handleKey(e: KeyboardEvent) {
+    const letter = e.key.toUpperCase()
+    if(letter.match(/^[A-Z]$/)){
+      guess(letter)
+    }
+  }
+  window.addEventListener("keydown", handleKey)
+  return () => {
+    window.removeEventListener("keydown", handleKey)
+  }
+}, [guessed, word])
   }
 
   return (
